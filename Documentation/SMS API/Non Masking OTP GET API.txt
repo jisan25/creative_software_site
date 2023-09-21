@@ -1,0 +1,1 @@
+https://24bulksms.com/24bulksms/api/otp-api-sms-send?sender_id="Your Sender ID"&api_key="Your Ap Key"&mobile_no="01700000000,01700000001"&message="This is test SMS"&user_email="yourmail@gmail.com"
