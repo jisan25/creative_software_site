@@ -4,18 +4,19 @@ import { useEffect, useState } from "react";
 const PopUpAd = () => {
   const maxTime = 3;
   let totalTime;
-  if (localStorage.getItem("showedTime")) {
-    totalTime = localStorage.getItem("showedTime");
-  } else {
-    localStorage.setItem("showedTime", 0);
-    totalTime = localStorage.getItem("showedTime");
-  }
 
   const [showedTime, setShowedTime] = useState(totalTime);
   const [popup, setPopUp] = useState(false);
   useEffect(() => {
     setPopUp(true);
     togglePopUp();
+
+    if (localStorage.getItem("showedTime")) {
+      totalTime = localStorage.getItem("showedTime");
+    } else {
+      localStorage.setItem("showedTime", 0);
+      totalTime = localStorage.getItem("showedTime");
+    }
   }, []);
 
   const removePopUp = () => {
