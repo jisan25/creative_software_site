@@ -20,15 +20,16 @@ const ProductDetailsPage = ({ params }) => {
   const [products, setProducts] = useState(ProductsData);
   const [product, setProduct] = useState({});
 
-  if (product.title) {
-    document.title = product.title + " - creative software ";
-  }
+  // if (product.title) {
+  //   document.title = product.title + " - creative software ";
+  // }
 
   useEffect(() => {
     if (params.id) {
       products.find((item) => {
         if (item.slug === params.id) {
           setProduct(item);
+          document.title = item.title + " - creative software ";
         }
       });
     }

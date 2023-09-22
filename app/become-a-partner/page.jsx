@@ -1,12 +1,15 @@
 "use client";
 
+import { useEffect } from "react";
 import Facilities from "../components/be-a-partner/Facilities";
 import PartnerForm from "../components/be-a-partner/PartnerForm";
 
 // product data from local db
 
 const ProductDetailsPage = () => {
-  document.title = "Become a Partner - creative software ";
+  useEffect(() => {
+    document.title = "Become a Partner - creative software ";
+  }, []);
 
   return (
     <>

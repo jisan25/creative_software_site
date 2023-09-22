@@ -15,11 +15,14 @@ import Clients from "./components/home/Clients";
 import Blog from "./components/home/Blog";
 import Contact from "./components/home/Contact";
 import LevelUp from "./components/home/LevelUp";
-import NewsLetter from "./components/home/NewsLetter";
 import siteInfo from "./db/siteInfo";
+import { useEffect } from "react";
 
 export default function Home() {
-  document.title = siteInfo.site_name + " - " + siteInfo.site_title;
+  useEffect(() => {
+    document.title = siteInfo.site_name + " - " + siteInfo.site_title;
+  }, []);
+
   return (
     <>
       <PopUpAd />
