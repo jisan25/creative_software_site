@@ -2,41 +2,41 @@
 import { useEffect, useState } from "react";
 
 const PopUpAd = () => {
-  const maxTime = 3;
-  let totalTime;
-
-  const [showedTime, setShowedTime] = useState(totalTime);
+  const [totalTime, setTotalTime] = useState(1);
   const [popup, setPopUp] = useState(false);
+  window.onload = (event) => {
+    if (localStorage.getItem("showedTime")) {
+      if (localStorage.getItem("showedTime") < 3) {
+        return (document.querySelector(".popup").style.display = "block");
+      } else {
+        setPopUp(false);
+        return;
+      }
+    }
+
+    document.querySelector(".popup").style.display = "block";
+  };
+
   useEffect(() => {
     setPopUp(true);
-    togglePopUp();
-
     if (localStorage.getItem("showedTime")) {
-      totalTime = localStorage.getItem("showedTime");
+      let timeShow = localStorage.getItem("showedTime");
+      setTotalTime(timeShow);
     } else {
-      localStorage.setItem("showedTime", 0);
-      totalTime = localStorage.getItem("showedTime");
+      localStorage.setItem("showedTime", 1);
     }
   }, []);
 
   const removePopUp = () => {
     document.querySelector(".popup").style.display = "none";
     setPopUp(false);
-    localStorage.setItem("showedTime", totalTime + 1);
-    setShowedTime(totalTime + 1);
-  };
-
-  const togglePopUp = () => {
-    window.addEventListener("load", () => {
-      if (showedTime < maxTime) {
-        document.querySelector(".popup").style.display = "block";
-      }
-    });
+    let totalTime = parseInt(localStorage.getItem("showedTime"));
+    localStorage.setItem("showedTime", (totalTime += 1));
   };
 
   return (
     <>
-      {popup && showedTime < maxTime && (
+      {popup && totalTime < 3 && (
         <>
           <div class="pop-up-transparent-bg"></div>
           <div class="popup">
