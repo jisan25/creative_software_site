@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 const PopUpAd = () => {
   const [totalTime, setTotalTime] = useState(1);
   const [popup, setPopUp] = useState(false);
-  window.onload = (event) => {
+
+  const handlePopUp = () => {
     if (localStorage.getItem("showedTime")) {
       if (localStorage.getItem("showedTime") < 3) {
         return (document.querySelector(".popup").style.display = "block");
@@ -13,12 +14,12 @@ const PopUpAd = () => {
         return;
       }
     }
-
     document.querySelector(".popup").style.display = "block";
   };
 
   useEffect(() => {
     setPopUp(true);
+    handlePopUp();
     if (localStorage.getItem("showedTime")) {
       let timeShow = localStorage.getItem("showedTime");
       setTotalTime(timeShow);
@@ -29,6 +30,8 @@ const PopUpAd = () => {
 
   const removePopUp = () => {
     document.querySelector(".popup").style.display = "none";
+    document.querySelector(".pop-up-transparent-bg").style.display = "none";
+
     setPopUp(false);
     let totalTime = parseInt(localStorage.getItem("showedTime"));
     localStorage.setItem("showedTime", (totalTime += 1));
@@ -36,10 +39,10 @@ const PopUpAd = () => {
 
   return (
     <>
-      {popup && totalTime < 3 && (
+      {totalTime < 3 && (
         <>
-          <div class="pop-up-transparent-bg"></div>
-          <div class="popup">
+          <div className={popup && "pop-up-transparent-bg"}></div>
+          <div className="popup">
             <button onClick={removePopUp} className="popup-btn" id="close">
               &times;
             </button>
