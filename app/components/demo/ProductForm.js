@@ -92,7 +92,11 @@ const ProductForm = ({ productData }) => {
               <option disabled>Select Product</option>
               {ProductsData.map((item) => {
                 // const { slug, title } = item;
-                return <option value={item.slug}>{item.title}</option>;
+                return (
+                  <option key={item.id} value={item.slug}>
+                    {item.title}
+                  </option>
+                );
               })}
             </select>
           )
@@ -103,7 +107,11 @@ const ProductForm = ({ productData }) => {
             </option>
             {ProductsData.map((item) => {
               // const { slug, title } = item;
-              return <option value={item.slug}>{item.title}</option>;
+              return (
+                <option key={item.id} value={item.slug}>
+                  {item.title}
+                </option>
+              );
             })}
           </select>
         )}
