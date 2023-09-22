@@ -9,7 +9,7 @@ const Counts = () => {
             <div className="count-box">
               <i className="bi bi-emoji-smile"></i>
               <div>
-                <span>232</span>
+                <span>233</span>
                 <p>Happy Clients</p>
               </div>
             </div>
