@@ -3,12 +3,14 @@ const Pricing = () => {
     // pricing section
     <section id="pricing" className="pricing">
       <div className="container-xl container-fluid">
+        {/* pricing header */}
         <header className="section-header">
           <h2>Pricing</h2>
           <p>Check our Pricing</p>
         </header>
 
         <div className="row gy-4">
+          {/* price  */}
           <div className="col-lg-3 col-md-6">
             <div className="box">
               <h3 style={{ color: "#07d5c0" }}>Free Plan</h3>
@@ -29,6 +31,7 @@ const Pricing = () => {
             </div>
           </div>
 
+          {/* price  */}
           <div className="col-lg-3 col-md-6">
             <div className="box">
               <span className="featured">Featured</span>
@@ -53,7 +56,7 @@ const Pricing = () => {
               </a>
             </div>
           </div>
-
+          {/* price  */}
           <div className="col-lg-3 col-md-6">
             <div className="box">
               <h3 style={{ color: "ff901c" }}>Business Plan</h3>
@@ -78,6 +81,7 @@ const Pricing = () => {
             </div>
           </div>
 
+          {/* price */}
           <div className="col-lg-3 col-md-6">
             <div className="box">
               <h3 style={{ color: "#ff0071" }}>Ultimate Plan</h3>

@@ -2,9 +2,11 @@ import Link from "next/link";
 
 const Pages = () => {
   return (
-    <div class="tab-content mt-3" id="myTabContent">
+    // sitemap pages
+    <div className="tab-content mt-3" id="myTabContent">
+      {/* page */}
       <div
-        class="tab-pane fade show active"
+        className="tab-pane fade show active"
         id="creative-software"
         role="tabpanel"
       >
@@ -32,7 +34,8 @@ const Pages = () => {
           </li>
         </ul>
       </div>
-      <div class="tab-pane fade" id="services" role="tabpanel">
+      {/* page */}
+      <div className="tab-pane fade" id="services" role="tabpanel">
         <ul className="sitemap-pages">
           <li>
             <Link href={"#"}>All Services</Link>
@@ -42,8 +45,9 @@ const Pages = () => {
           </li>
         </ul>
       </div>
+      {/* page */}
       <div
-        class="tab-pane fade"
+        className="tab-pane fade"
         id="products"
         role="tabpanel"
         aria-labelledby="contact-tab"
@@ -114,8 +118,9 @@ const Pages = () => {
           </li>
         </ul>
       </div>
+      {/* page */}
       <div
-        class="tab-pane fade"
+        className="tab-pane fade"
         id="career"
         role="tabpanel"
         aria-labelledby="contact-tab"
@@ -132,9 +137,9 @@ const Pages = () => {
           </li>
         </ul>
       </div>
-
+      {/* page */}
       <div
-        class="tab-pane fade"
+        className="tab-pane fade"
         id="resources"
         role="tabpanel"
         aria-labelledby="contact-tab"
@@ -167,7 +172,7 @@ const Pages = () => {
         </ul>
       </div>
       <div
-        class="tab-pane fade"
+        className="tab-pane fade"
         id="support"
         role="tabpanel"
         aria-labelledby="contact-tab"

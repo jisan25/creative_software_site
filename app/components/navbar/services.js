@@ -1,10 +1,13 @@
 import Link from "next/link";
+//all service data from local db
 import ServicesData from "../../db/Corporate";
 import { useState } from "react";
 
 const Services = () => {
+  // state
   const [services, setServices] = useState(ServicesData);
 
+  // shorten the paragraph
   const truncateParagraph = (paragraph, maxLength) => {
     if (paragraph.length <= maxLength) {
       return paragraph;
@@ -13,9 +16,11 @@ const Services = () => {
     }
   };
   return (
+    // service section
     <section className="product__sec">
       <div className="d-flex justify-content-around gap-3">
         <div className="product__col__wrapper services__col__wrapper">
+          {/* heading */}
           <h2>Check our Services</h2>
           <div className="row">
             {/* service start */}
@@ -28,6 +33,7 @@ const Services = () => {
                   <div>
                     <h4>{item.title}</h4>
                     <p>{truncateParagraph(item.description, 125)}</p>
+                    {/* cta -> learn more */}
                     {item.slug === "it-outsourcing" && (
                       <Link
                         className="mt-2 font-bold"

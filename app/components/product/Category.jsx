@@ -1,11 +1,15 @@
+// all products data from local db
 import { ProductsData } from "../../db/Corporate";
+// google font config
 import { Nunito } from "next/font/google";
 const nunito = Nunito({ subsets: ["cyrillic"] });
+
 const Category = ({ title }) => {
   return (
     // point of sales software category
     <section id="services" className="services">
       <div className="container-fluid container-xl">
+        {/* heading */}
         <header className="section-header">
           <p className="text-uppercase">{title}</p>
         </header>

@@ -1,10 +1,9 @@
 "use client";
-import { useState } from "react";
 
 const Faq = () => {
-  const [show, setShow] = useState(false);
-
+  // toggle faqs
   const toggleCollapse = (id) => {
+    // get faq content based on id
     const content = document.getElementById(id);
     if (content) {
       content.classList.toggle("collapse");
@@ -13,14 +12,17 @@ const Faq = () => {
   return (
     <section id="faq" className="faq">
       <div className="container-xl container-fluid">
+        {/* section header */}
         <header className="section-header">
           <h2>F.A.Q</h2>
           <p>Frequently Asked Questions</p>
         </header>
 
         <div className="row">
+          {/* faw left */}
           <div className="col-lg-6">
             <div className="accordion accordion-flush" id="faqlist1">
+              {/* faq & answer */}
               <div className="accordion-item">
                 <h2 className="accordion-header">
                   <button
@@ -46,7 +48,7 @@ const Faq = () => {
                   </div>
                 </div>
               </div>
-
+              {/* faq & answer */}
               <div className="accordion-item">
                 <h2 className="accordion-header">
                   <button
@@ -74,7 +76,7 @@ const Faq = () => {
                   </div>
                 </div>
               </div>
-
+              {/* faq & answer */}
               <div className="accordion-item">
                 <h2 className="accordion-header">
                   <button
@@ -106,8 +108,10 @@ const Faq = () => {
             </div>
           </div>
 
+          {/* faq right */}
           <div className="col-lg-6">
             <div className="accordion accordion-flush" id="faqlist2">
+              {/* faq & answer */}
               <div className="accordion-item">
                 <h2 className="accordion-header">
                   <button
@@ -134,7 +138,7 @@ const Faq = () => {
                   </div>
                 </div>
               </div>
-
+              {/* faq & answer */}
               <div className="accordion-item">
                 <h2 className="accordion-header">
                   <button
@@ -161,7 +165,7 @@ const Faq = () => {
                   </div>
                 </div>
               </div>
-
+              {/* faq & answer */}
               <div className="accordion-item">
                 <h2 className="accordion-header">
                   <button

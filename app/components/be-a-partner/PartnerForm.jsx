@@ -3,6 +3,7 @@ import Link from "next/link";
 const PartnerForm = () => {
   return (
     <>
+      {/* form heading */}
       <h1 className="text-uppercase" style={{ marginBottom: "5px" }}>
         Become A Partner
       </h1>
@@ -44,7 +45,7 @@ const PartnerForm = () => {
       {/* designation & type of company */}
       <div className="input-group mb-3">
         <span className="input-group-text">
-          <i class="bi bi-ubuntu"></i>
+          <i className="bi bi-ubuntu"></i>
         </span>
         <input
           className="form-control"
@@ -53,7 +54,7 @@ const PartnerForm = () => {
         />
 
         <span className="input-group-text">
-          <i class="bi bi-building-fill-gear"></i>
+          <i className="bi bi-building-fill-gear"></i>
         </span>
         <input
           className="form-control"
@@ -99,7 +100,7 @@ const PartnerForm = () => {
       {/* solution  */}
       <div className="input-group mb-3">
         <span className="input-group-text">
-          <i class="bi bi-bullseye"></i>
+          <i className="bi bi-bullseye"></i>
         </span>
         <input
           className="form-control"

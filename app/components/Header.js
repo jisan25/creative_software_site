@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-// import siteInfo from "@/app/db/siteInfo";
+// get site info from loacl db
 import siteInfo from "../db/siteInfo";
+// navbar components
 import Products from "./navbar/products";
 import Services from "./navbar/services";
 import Company from "./navbar/company";

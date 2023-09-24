@@ -1,8 +1,11 @@
 const Support = () => {
   return (
+    // support section
     <section className="company_section">
+      {/* section heading */}
       <h2 className="title">need any help ?</h2>
       <div className="row mb-3">
+        {/* column */}
         <div className="company-col-2 col-lg-4">
           <li>
             <a href="#">
@@ -26,10 +29,11 @@ const Support = () => {
           </li>
           <li>
             <a href="#">
-              <i class="bi bi-pass-fill"></i> Ticket
+              <i className="bi bi-pass-fill"></i> Ticket
             </a>
           </li>
         </div>
+        {/* column */}
         <div
           className="company-col-middle col-lg-4"
           style={{
@@ -71,6 +75,7 @@ const Support = () => {
             </a>
           </div>
         </div>
+        {/* column */}
         <div className="col-lg-4">
           <div
             className="row text-center place-content-center place-items-center"
@@ -87,7 +92,7 @@ const Support = () => {
                   paddingTop: "40px",
                 }}
               >
-                <i style={{ fontSize: "35px" }} class="bi bi-headset"></i>
+                <i style={{ fontSize: "35px" }} className="bi bi-headset"></i>
               </span>
             </div>
             <h4 className="mt-1 font-bold h5">+88 9696 66 88 14</h4>

@@ -1,8 +1,11 @@
-import Link from "next/link";
+// get all portfolio data from local db corporate
 import PortfolioData from "../../db/portfolio";
 import { useState } from "react";
 const Portfolio = () => {
+  // assign portfolio data to portfolios state
   const [portfolios, setPortfolios] = useState(PortfolioData);
+
+  // filter item by category
   const filterItem = (category) => {
     const updatedPortfolios = PortfolioData.filter((item) => {
       return item.category === category;
@@ -10,13 +13,16 @@ const Portfolio = () => {
     setPortfolios(updatedPortfolios);
   };
   return (
+    // portfolio section
     <section id="portfolio" className="portfolio">
       <div className="container-fluid container-xl">
+        {/* portfolio header */}
         <header className="section-header">
           <h2>Portfolio</h2>
           <p>Check our latest work</p>
         </header>
 
+        {/* portfolio buttons */}
         <div className="row">
           <div className="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
@@ -32,7 +38,7 @@ const Portfolio = () => {
             </ul>
           </div>
         </div>
-
+        {/* portfolios */}
         <div className="row gy-4 portfolio-container">
           {portfolios.map((portfolio) => {
             const { id, title, image, description } = portfolio;
@@ -42,7 +48,9 @@ const Portfolio = () => {
                 key={id}
               >
                 <div className="portfolio-wrap">
+                  {/* portfolio image */}
                   <img src={image} className="img-fluid" alt="" />
+                  {/* portfolio content */}
                   <div className="portfolio-info">
                     <h4>{title}</h4>
                     <p>{description}</p>

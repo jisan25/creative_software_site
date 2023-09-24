@@ -12,9 +12,11 @@ const Hero = () => {
           <div className="col-lg-6 d-flex flex-column justify-content-center">
             <h1>We offer modern solutions for growing your business</h1>
             <h2>
-            We are Ready  Team of talented people  for design & Develop websites, Software & Apps.
+              We are Ready Team of talented people for design & Develop
+              websites, Software & Apps.
             </h2>
             <div>
+              {/* hero call to action buttons */}
               <div className="text-center text-lg-start">
                 <a
                   href="#"
@@ -31,6 +33,7 @@ const Hero = () => {
                   <i className="bi bi-arrow-right"></i>
                 </Link>
               </div>
+              {/* newsletter */}
               <div className="footer-newsletter col-lg-9 mt-2">
                 <form action="" method="post">
                   <input type="email" name="email" />
@@ -38,13 +41,13 @@ const Hero = () => {
                 </form>
                 <div className="mt-2 news-letter-benifits">
                   <span>
-                    <i class="bi bi-check-lg"></i> Free plan available
+                    <i className="bi bi-check-lg"></i> Free plan available
                   </span>{" "}
                   <span>
-                    <i class="bi bi-check-lg"></i> Easy Setup
+                    <i className="bi bi-check-lg"></i> Easy Setup
                   </span>{" "}
                   <span>
-                    <i class="bi bi-check-lg"></i> No credit card required
+                    <i className="bi bi-check-lg"></i> No credit card required
                   </span>
                 </div>
               </div>

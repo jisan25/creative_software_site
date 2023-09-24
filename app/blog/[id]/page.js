@@ -1,3 +1,4 @@
+// components -> single blog page
 import BreadCrumbs from "@/app/components/blog/BreadCrumbs";
 import Sidebar from "@/app/components/blog/Sidebar";
 import Article from "@/app/components/blog/single/Article";

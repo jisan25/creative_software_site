@@ -15,6 +15,7 @@ export default class SliderTestimonial extends Component {
     return (
       <>
         <Slider {...settings}>
+          {/* testimonial */}
           <div className="">
             <div className="testimonial-item">
               <div className="stars">
@@ -40,7 +41,7 @@ export default class SliderTestimonial extends Component {
               </div>
             </div>
           </div>
-
+          {/* testimonial */}
           <div className="">
             <div className="testimonial-item">
               <div className="stars">
@@ -66,7 +67,7 @@ export default class SliderTestimonial extends Component {
               </div>
             </div>
           </div>
-
+          {/* testimonial */}
           <div className="">
             <div className="testimonial-item">
               <div className="stars">
@@ -92,7 +93,7 @@ export default class SliderTestimonial extends Component {
               </div>
             </div>
           </div>
-
+          {/* testimonial */}
           <div className="">
             <div className="testimonial-item">
               <div className="stars">
@@ -119,7 +120,7 @@ export default class SliderTestimonial extends Component {
               </div>
             </div>
           </div>
-
+          {/* testimonial */}
           <div className="">
             <div className="testimonial-item">
               <div className="stars">

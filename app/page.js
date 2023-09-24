@@ -19,6 +19,7 @@ import siteInfo from "./db/siteInfo";
 import { useEffect } from "react";
 
 export default function Home() {
+  // after page is loaded set page title dynamically from local db name siteinfo
   useEffect(() => {
     document.title = siteInfo.site_name + " - " + siteInfo.site_title;
   }, []);
@@ -28,7 +29,6 @@ export default function Home() {
       <PopUpAd />
       <Hero />
       <main id="main">
-        {/* <NewsLetter /> */}
         <About />
         <Values />
         <Counts />

@@ -3,6 +3,7 @@ import TopBar from "@/app/components/TopBar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GoToTop from "./components/GoToTop";
+import WaChat from "./components/WaChat";
 
 // glbobal css
 import "./globals.css";
@@ -12,20 +13,11 @@ import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-/**
- * js vendor files (support js)
- */
-
-// import "./assets/vendor/jquery/jquery.min";
-
-// template main js file
-// import "./assets/js/main";
-
+// google font configuration
 import { Inter } from "next/font/google";
-import WaChat from "./components/WaChat";
-
 const inter = Inter({ subsets: ["latin"] });
 
+// home page metadata - title & description
 export const metadata = {
   title: process.env.SITE_NAME + " - " + process.env.SITE_TITLE,
   description: process.env.SITE_TITLE,

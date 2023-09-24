@@ -1,16 +1,23 @@
 "use client";
+// all services data from local db corporate
 import ServicesData from "@/app/db/Corporate";
 import { useEffect, useState } from "react";
 
+// google font config
 import { Nunito } from "next/font/google";
 const nunito = Nunito({ subsets: ["cyrillic"] });
 
 const ServiceDetailsPage = ({ params }) => {
+  // state
   const [loading, setLoading] = useState(true);
   const [service, setService] = useState({});
+
+  // after page is loaded
   useEffect(() => {
     getService();
   }, []);
+
+  // return service matched to route params
   const getService = () => {
     ServicesData.find((item) => {
       if (item.slug === params.id) {
@@ -20,6 +27,7 @@ const ServiceDetailsPage = ({ params }) => {
     setLoading(false);
   };
 
+  // shorten the text
   const truncateParagraph = (paragraph, maxLength) => {
     if (paragraph.length <= maxLength) {
       return paragraph;
@@ -30,9 +38,11 @@ const ServiceDetailsPage = ({ params }) => {
   return (
     <main id="main">
       <section id="services" className="services">
+        {/* show a loader */}
         {loading && <h4 className="h4 text-center">Loading ....</h4>}
         {!loading && (
           <div className="container-fluid container-xl">
+            {/* section header */}
             <header className="section-header">
               <h2>Service</h2>
               <p>Veritatis et dolores facere numquam et praesentium</p>

@@ -1,10 +1,15 @@
 import PopUpJoinForm from "@/app/components/join-team/PopUpJoinForm";
 import { useState } from "react";
 const Requirements = ({ title }) => {
+  // joinform state - default is false
   const [joinForm, setJoinForm] = useState(false);
+
+  // handle apply now
   const applyNow = () => {
     setJoinForm(true);
+    // go to top of the page
     document.documentElement.scrollTop = 0;
+    // show pop up join form is join form state is true
     if (joinForm) {
       document.querySelector(".popup").style.display = "block";
       document.querySelector(".pop-up-transparent-bg").style.display = "block";
@@ -17,7 +22,7 @@ const Requirements = ({ title }) => {
 
       <div className="requirements">
         <h2 className="h1 text-uppercase mb-4 font-bold">{title}</h2>
-
+        {/* role */}
         <div className="mb-4">
           <h3 className="h3">Role</h3>
           <ul className="ml-5" style={{ listStyle: "disc" }}>
@@ -29,6 +34,7 @@ const Requirements = ({ title }) => {
             </li>
           </ul>
         </div>
+        {/* responsibilities */}
         <div className="mb-4">
           <h3 className="h3">Responsibilities</h3>
           <ul className="ml-5" style={{ listStyle: "disc" }}>
@@ -48,6 +54,7 @@ const Requirements = ({ title }) => {
             </li>
           </ul>
         </div>
+        {/* skills required */}
         <div className="mb-4">
           <h3 className="h3">Skills Required</h3>
           <ul className="ml-5" style={{ listStyle: "disc" }}>
@@ -68,6 +75,7 @@ const Requirements = ({ title }) => {
             <li>Version Control (SVN & Git) knowledge is required.</li>
           </ul>
         </div>
+        {/* educational qualification */}
         <div className="mb-4">
           <h3 className="h3">Educational Qualification</h3>
           <ul className="ml-5" style={{ listStyle: "disc" }}>
@@ -88,12 +96,14 @@ const Requirements = ({ title }) => {
             </li>
           </ul>
         </div>
+        {/* location */}
         <div className="mb-4">
           <h3 className="h3">Location</h3>
           <ul className="ml-5" style={{ listStyle: "disc" }}>
             <li>Dhaka, Bangladesh</li>
           </ul>
         </div>
+        {/* call to action apply now */}
         <button onClick={() => applyNow()} className="btn btn-lg btn-primary">
           Apply Now
         </button>

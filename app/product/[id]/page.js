@@ -1,30 +1,25 @@
 "use client";
-// import ProductForm from "../../components/demo/ProductForm";
-import ProductForm from "@/app/components/demo/ProductForm";
 
+// components
+import ProductForm from "@/app/components/demo/ProductForm";
 import BreadCrumbs from "../../components/product/BreadCrumbs";
 import Description from "../../components/product/Description";
 import Category from "../../components/product/Category";
+import Features from "../../components/product/Features";
 import Info from "../../components/product/Info";
 import YoutubeVideo from "../../components/product/YoutubeVideo";
 
-// import { Metadata, ResolvingMetadata } from "next";
-
-// product data from local db
-
+// all products data from local db corporate
 import { ProductsData } from "../../db/Corporate";
-// import { metadata } from "@/app/layout";
 import { useEffect, useState } from "react";
 
 const ProductDetailsPage = ({ params }) => {
+  // state
   const [products, setProducts] = useState(ProductsData);
   const [product, setProduct] = useState({});
 
-  // if (product.title) {
-  //   document.title = product.title + " - creative software ";
-  // }
-
   useEffect(() => {
+    // set page title with product title & company name dynamically
     if (params.id) {
       products.find((item) => {
         if (item.slug === params.id) {
@@ -34,10 +29,6 @@ const ProductDetailsPage = ({ params }) => {
       });
     }
   }, []);
-
-  // change page title
-
-  // set dynamic metadata
 
   return (
     <>
@@ -65,7 +56,10 @@ const ProductDetailsPage = ({ params }) => {
                 <Category title="pos category" />
               )}
               {params.id !== "point-of-sales-software" && (
-                <Category title="features" />
+                <Features
+                  title={`${product.title} - features`}
+                  slug={params.id}
+                />
               )}
             </div>
           </div>

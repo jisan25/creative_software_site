@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect } from "react";
+// component -> facilitis & partner form
 import Facilities from "../components/be-a-partner/Facilities";
 import PartnerForm from "../components/be-a-partner/PartnerForm";
 
 // product data from local db
 
 const ProductDetailsPage = () => {
+  // change title after the page is loaded
   useEffect(() => {
     document.title = "Become a Partner - creative software ";
   }, []);

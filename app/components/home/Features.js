@@ -1,10 +1,11 @@
 const Features = () => {
+  // to handle tab change
   const toggleTab = (e, id) => {
     const tab = document.getElementById(id);
 
     // get all tabls
     const allTabs = document.querySelectorAll(".tab-pane");
-    // remove active class from other tabsl
+    // remove active class from other tabs
     allTabs.forEach((item) => {
       if (item.classList.contains("active")) {
         item.classList.remove("active");
@@ -26,7 +27,6 @@ const Features = () => {
     if (tab) {
       tab.classList.add("active");
     }
-    console.log(e.target.classList.add("active"));
   };
 
   return (
@@ -40,47 +40,49 @@ const Features = () => {
         </header>
 
         <div className="row">
+          {/* feature image */}
           <div className="col-lg-6">
             <img src="/img/features.png" className="img-fluid" alt="" />
           </div>
-
+          {/* feature contents */}
           <div className="col-lg-6 mt-5 mt-lg-0 d-flex">
             <div className="row align-self-center gy-4">
+              {/* feature */}
               <div className="col-md-6">
                 <div className="feature-box d-flex align-items-center">
                   <i className="bi bi-check"></i>
                   <h3>Eos aspernatur rem</h3>
                 </div>
               </div>
-
+              {/* feature */}
               <div className="col-md-6">
                 <div className="feature-box d-flex align-items-center">
                   <i className="bi bi-check"></i>
                   <h3>Facilis neque ipsa</h3>
                 </div>
               </div>
-
+              {/* feature */}
               <div className="col-md-6">
                 <div className="feature-box d-flex align-items-center">
                   <i className="bi bi-check"></i>
                   <h3>Volup amet voluptas</h3>
                 </div>
               </div>
-
+              {/* feature */}
               <div className="col-md-6">
                 <div className="feature-box d-flex align-items-center">
                   <i className="bi bi-check"></i>
                   <h3>Rerum omnis sint</h3>
                 </div>
               </div>
-
+              {/* feature */}
               <div className="col-md-6">
                 <div className="feature-box d-flex align-items-center">
                   <i className="bi bi-check"></i>
                   <h3>Alias possimus</h3>
                 </div>
               </div>
-
+              {/* feature */}
               <div className="col-md-6">
                 <div className="feature-box d-flex align-items-center">
                   <i className="bi bi-check"></i>
@@ -91,25 +93,28 @@ const Features = () => {
           </div>
         </div>
 
+        {/* tab section */}
         <div className="row feture-tabs">
           <div className="col-lg-6">
+            {/* tab section heading */}
             <h3>
               Neque officiis dolore maiores et exercitationem quae est seda
               lidera pat claero
             </h3>
 
+            {/* tab buttons */}
             <ul className="nav nav-pills mb-3">
+              {/* tab button */}
               <li>
                 <a
                   className="nav-link active"
                   style={{ cursor: "pointer" }}
-                  // data-bs-toggle="pill"
-                  // href=""
                   onClick={(e) => toggleTab(e, "tab1")}
                 >
                   Saepe fuga 1
                 </a>
               </li>
+              {/* tab button */}
               <li>
                 <a
                   className="nav-link"
@@ -119,6 +124,7 @@ const Features = () => {
                   Voluptates
                 </a>
               </li>
+              {/* tab button */}
               <li>
                 <a
                   className="nav-link"
@@ -131,6 +137,7 @@ const Features = () => {
             </ul>
             {/* tab content */}
             <div className="tab-content">
+              {/* tab */}
               <div className="tab-pane fade show active" id="tab1">
                 <p>
                   Consequuntur inventore voluptates consequatur aut vel et. Eos
@@ -157,7 +164,7 @@ const Features = () => {
                   tempora. Quia et perferendis.
                 </p>
               </div>
-
+              {/* tab */}
               <div className="tab-pane fade show" id="tab2">
                 <h2 style={{ fontSize: "1.5rem", fontWeight: "500" }}>Tab 2</h2>
                 <p>
@@ -185,7 +192,7 @@ const Features = () => {
                   tempora. Quia et perferendis.
                 </p>
               </div>
-
+              {/* tab */}
               <div className="tab-pane fade show" id="tab3">
                 <h2 style={{ fontSize: "1.5rem", fontWeight: "500" }}>Tab 3</h2>
                 <p>
@@ -215,22 +222,26 @@ const Features = () => {
               </div>
             </div>
           </div>
-
+          {/* tab section image */}
           <div className="col-lg-6">
             <img src="/img/features-2.png" className="img-fluid" alt="" />
           </div>
         </div>
 
+        {/* after tab section */}
         <div className="row feature-icons">
           <h3>Ratione mollitia eos ab laudantium rerum beatae quo</h3>
 
           <div className="row">
+            {/* after tab image */}
             <div className="col-xl-4 text-center">
               <img src="/img/features-3.png" className="img-fluid p-4" alt="" />
             </div>
 
+            {/* after tab contents */}
             <div className="col-xl-8 d-flex content">
               <div className="row align-self-center gy-4">
+                {/* content */}
                 <div className="col-md-6 icon-box">
                   <i className="ri-line-chart-line"></i>
                   <div>
@@ -241,7 +252,7 @@ const Features = () => {
                     </p>
                   </div>
                 </div>
-
+                {/* content */}
                 <div className="col-md-6 icon-box">
                   <i className="ri-stack-line"></i>
                   <div>
@@ -252,7 +263,7 @@ const Features = () => {
                     </p>
                   </div>
                 </div>
-
+                {/* content */}
                 <div className="col-md-6 icon-box">
                   <i className="ri-brush-4-line"></i>
                   <div>
@@ -263,7 +274,7 @@ const Features = () => {
                     </p>
                   </div>
                 </div>
-
+                {/* content */}
                 <div className="col-md-6 icon-box">
                   <i className="ri-magic-line"></i>
                   <div>
@@ -274,7 +285,7 @@ const Features = () => {
                     </p>
                   </div>
                 </div>
-
+                {/* content */}
                 <div className="col-md-6 icon-box">
                   <i className="ri-command-line"></i>
                   <div>
@@ -285,7 +296,7 @@ const Features = () => {
                     </p>
                   </div>
                 </div>
-
+                {/* content */}
                 <div className="col-md-6 icon-box">
                   <i className="ri-radar-line"></i>
                   <div>

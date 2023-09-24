@@ -1,3 +1,4 @@
+// components -> article, breadcrumbs & sidebar
 import Article from "@/app/components/blog/Article";
 import BreadCrumbs from "@/app/components/blog/BreadCrumbs";
 import Sidebar from "@/app/components/blog/Sidebar";
@@ -16,6 +17,7 @@ const BlogPage = () => {
               <Article />
               <Article />
               <Article />
+              {/* blog pagintaion */}
               <div className="blog-pagination">
                 <ul className="justify-content-center">
                   <li>

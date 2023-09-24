@@ -6,7 +6,9 @@
       "esnext"
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     },
     "allowJs": true,
     "skipLibCheck": true,
@@ -29,8 +31,11 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "app/product/[id]/page.js", "app/product/page.jsx"  ],
+    "**/*.tsx",
+    "app/product/[id]/page.js",
+    "app/product/page.jsx",
+    "build/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

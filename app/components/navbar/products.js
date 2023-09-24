@@ -1,9 +1,11 @@
-import { ProductsData } from "../../db/Corporate";
 import Link from "next/link";
+// all products data from local db corporate
+import { ProductsData } from "../../db/Corporate";
 import { useState } from "react";
 const Products = () => {
+  // state
   const [products, setProducts] = useState(ProductsData);
-
+  // shorten the text
   const truncateParagraph = (paragraph, maxLength) => {
     if (paragraph.length <= maxLength) {
       return paragraph;
@@ -12,9 +14,11 @@ const Products = () => {
     }
   };
   return (
+    // products section
     <section className="product__sec">
       <div className="d-flex justify-content-around gap-3">
         <div className="product__col__wrapper row">
+          {/* heading */}
           <h2>PRODUCTS </h2>
 
           {/* product  */}
@@ -52,114 +56,6 @@ const Products = () => {
 
           {/* product end */}
         </div>
-
-        {/* <div className="product__col__wrapper">
-          <div>
-            <br />
-            <br />
-          </div>
-          <div>
-            <div className="d-flex justify-content-between mb-3">
-              <div>
-                <i className="bi bi-clipboard-data-fill"></i>
-              </div>
-              <div>
-                <h4>Pharmacy Management Software</h4>
-                <p>
-                  Enhance pharmacy efficiency with Pharmacy Management Software.
-                </p>
-              </div>
-            </div>
-            <div className="d-flex justify-content-between mb-3">
-              <div>
-                <i className="bi bi-cloud-fog2-fill"></i>
-              </div>
-              <div>
-                <h4>Parking Management Software</h4>
-                <p>
-                  Effortlessly control parking facilities with Parking
-                  Management Software.
-                </p>
-              </div>
-            </div>
-            <div className="d-flex justify-content-between mb-3">
-              <div>
-                <i className="bi bi-currency-rupee"></i>
-              </div>
-              <div>
-                <h4>Courier Management Software</h4>
-                <p>
-                  Optimize courier operations with Courier Management Software.
-                </p>
-              </div>
-            </div>
-            <div className="d-flex justify-content-between mb-3">
-              <div>
-                <i class="bi bi-command"></i>
-              </div>
-              <div>
-                <h4>Customer Relationship Management</h4>
-                <p>Strengthen customer connections with CRM software.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="product__col__wrapper">
-          <div>
-            <br />
-            <br />
-          </div>
-          <div>
-            <div className="d-flex justify-content-between mb-3">
-              <div>
-                <i className="bi bi-clipboard-data-fill"></i>
-              </div>
-              <div>
-                <h4>Prescription Management System</h4>
-                <p>
-                  Efficiently manage prescriptions with Prescription Management
-                  System.
-                </p>
-              </div>
-            </div>
-            <div className="d-flex justify-content-between mb-3">
-              <div>
-                <i className="bi bi-cloud-fog2-fill"></i>
-              </div>
-              <div>
-                <h4>Micro Credit Management Software</h4>
-                <p>
-                  Streamline microcredit operations with Micro Credit Management
-                  Software.
-                </p>
-              </div>
-            </div>
-            <div className="d-flex justify-content-between mb-3">
-              <div>
-                <i className="bi bi-currency-rupee"></i>
-              </div>
-              <div>
-                <h4>Diagnostic Management System</h4>
-                <p>
-                  Enhance diagnostic workflows with Diagnostic Management
-                  System.
-                </p>
-              </div>
-            </div>
-            <div className="d-flex justify-content-between mb-3">
-              <div>
-                <i class="bi bi-command"></i>
-              </div>
-              <div>
-                <h4>Enterprise Resource Planing (ERP)</h4>
-                <p>
-                  Optimize business processes with Enterprise Resource Planning
-                  (ERP) software.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   );

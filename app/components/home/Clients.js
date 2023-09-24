@@ -1,9 +1,11 @@
+// client components
 import SliderClient from "./SliderClient";
 
 const Clients = () => {
   return (
     // clients section
     <section id="clients" className="clients">
+      {/* section header */}
       <div className="container-xl container-fluid">
         <header className="section-header">
           <h2>Our Clients</h2>

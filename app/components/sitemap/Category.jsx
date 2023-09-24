@@ -1,11 +1,14 @@
 "use client";
 const Category = () => {
+  // site map switch tabs functionality
   const handleChane = (e, page) => {
+    // get all tab buttons & remove active class & show active class to selected
     const allTabButtons = document.querySelectorAll(".nav-link");
     allTabButtons.forEach((element) => {
       element.classList.remove("active");
     });
     e.currentTarget.classList.add("active");
+    // get all tab pages & remove active class & show active class to selected
     const allTabPages = document.querySelectorAll(".tab-pane");
     allTabPages.forEach((element) => {
       element.classList.remove("show");
@@ -15,10 +18,12 @@ const Category = () => {
     document.getElementById(page).classList.add("active");
   };
   return (
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
+    // site map category
+    <ul className="nav nav-tabs" id="myTab" role="tablist">
+      {/* category */}
+      <li className="nav-item" role="presentation">
         <button
-          class="nav-link active"
+          className="nav-link active"
           id="home-tab"
           type="button"
           role="tab"
@@ -27,10 +32,11 @@ const Category = () => {
           Creative Software
         </button>
       </li>
-      <li class="nav-item" role="presentation">
+      {/* category */}
+      <li className="nav-item" role="presentation">
         <button
           onClick={(e) => handleChane(e, "services")}
-          class="nav-link"
+          className="nav-link"
           id="profile-tab"
           type="button"
           role="tab"
@@ -38,9 +44,10 @@ const Category = () => {
           Services
         </button>
       </li>
-      <li class="nav-item" role="presentation">
+      {/* category */}
+      <li className="nav-item" role="presentation">
         <button
-          class="nav-link"
+          className="nav-link"
           id="contact-tab"
           type="button"
           role="tab"
@@ -49,10 +56,11 @@ const Category = () => {
           Products
         </button>
       </li>
-      <li class="nav-item" role="presentation">
+      {/* category */}
+      <li className="nav-item" role="presentation">
         <button
           onClick={(e) => handleChane(e, "career")}
-          class="nav-link"
+          className="nav-link"
           id="contact-tab"
           type="button"
           role="tab"
@@ -60,10 +68,11 @@ const Category = () => {
           Career
         </button>
       </li>
-      <li class="nav-item" role="presentation">
+      {/* category */}
+      <li className="nav-item" role="presentation">
         <button
           onClick={(e) => handleChane(e, "resources")}
-          class="nav-link"
+          className="nav-link"
           id="contact-tab"
           type="button"
           role="tab"
@@ -71,10 +80,11 @@ const Category = () => {
           Resources
         </button>
       </li>
-      <li class="nav-item" role="presentation">
+      {/* category */}
+      <li className="nav-item" role="presentation">
         <button
           onClick={(e) => handleChane(e, "support")}
-          class="nav-link"
+          className="nav-link"
           id="contact-tab"
           type="button"
           role="tab"

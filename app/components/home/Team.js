@@ -3,12 +3,15 @@ const Team = () => {
     // team section
     <section id="team" className="team">
       <div className="container-xl container-fluid">
+        {/* sectiion header */}
         <header className="section-header">
           <h2>Team</h2>
           <p>Our hard working team</p>
         </header>
 
+        {/* team members */}
         <div className="row gy-4">
+          {/* member */}
           <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
@@ -39,7 +42,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-
+          {/* member */}
           <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
@@ -70,7 +73,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-
+          {/* member */}
           <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
@@ -101,7 +104,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-
+          {/* member */}
           <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">

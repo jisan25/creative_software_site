@@ -2,10 +2,12 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 const PopUpJoinForm = () => {
+  // show join form after page is loaded
   useEffect(() => {
     document.querySelector(".popup").style.display = "block";
   }, []);
 
+  // close join form
   const handleClose = () => {
     document.querySelector(".popup").style.display = "none";
     document.querySelector(".pop-up-transparent-bg").style.display = "none";
@@ -13,8 +15,9 @@ const PopUpJoinForm = () => {
 
   return (
     <>
-      <div class="pop-up-transparent-bg"></div>
-      <div class="popup">
+      <div className="pop-up-transparent-bg"></div>
+      <div className="popup">
+        {/* call to action close */}
         <button
           className="popup-btn-join"
           id="close"
@@ -24,6 +27,7 @@ const PopUpJoinForm = () => {
         </button>
         <div className="card mb-4 p-3">
           <div className="card-body">
+            {/* form sub heading */}
             <p
               className="text-medium-emphasis mb-3"
               style={{ marginTop: "0px" }}
@@ -55,7 +59,7 @@ const PopUpJoinForm = () => {
             {/* present address  */}
             <div className="input-group mb-3">
               <span className="input-group-text">
-                <i class="bi bi-geo-alt-fill"></i>
+                <i className="bi bi-geo-alt-fill"></i>
               </span>
               <input
                 className="form-control"
@@ -119,7 +123,7 @@ const PopUpJoinForm = () => {
               Upload Resume/CV
             </label>
             <div className="input-group">
-              <input class="form-control" type="file" id="formFile" />
+              <input className="form-control" type="file" id="formFile" />
             </div>
 
             {/* I agree & check privacy policy */}
@@ -141,7 +145,7 @@ const PopUpJoinForm = () => {
                 </Link>
               </p>
             </div>
-
+            {/* call to action - apply now */}
             <div style={{ display: "grid", placeItems: "end" }}>
               <button
                 className="btn btn-block btn-lg btn-primary form-btn"

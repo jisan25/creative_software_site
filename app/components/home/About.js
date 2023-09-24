@@ -19,6 +19,7 @@ const About = () => {
                 corrupti.
               </p>
               <div className="text-center text-lg-start">
+                {/* call to action button */}
                 <a
                   href="#"
                   className="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
@@ -32,7 +33,7 @@ const About = () => {
 
           {/* image content */}
           <div className="col-lg-6 d-flex align-items-center">
-            <img src="/img/about.jpg" className="img-fluid" alt="" />
+            <img src="/img/about.jpg" className="img-fluid" />
           </div>
         </div>
       </div>

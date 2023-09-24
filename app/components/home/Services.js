@@ -1,11 +1,16 @@
+// get service data from local db Corportae
 import ServicesData from "../../db/Corporate";
 import { useState } from "react";
+
+// google nuito font config
 import { Nunito } from "next/font/google";
 const nunito = Nunito({ subsets: ["cyrillic"] });
 
 const Services = () => {
+  // get services data in service state varible
   const [services, setServices] = useState(ServicesData);
 
+  // to shorten the paragraph
   const truncateParagraph = (paragraph, maxLength) => {
     if (paragraph.length <= maxLength) {
       return paragraph;
@@ -18,6 +23,7 @@ const Services = () => {
     // services section
     <section id="services" className="services">
       <div className="container-fluid container-xl">
+        {/* service heading */}
         <header className="section-header">
           <h2>Services</h2>
           <p>Veritatis et dolores facere numquam et praesentium</p>

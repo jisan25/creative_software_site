@@ -1,6 +1,9 @@
 import Contact from "../components/home/Contact";
 
-const CareerPage = () => {
+const ContactPage = () => {
+  /*
+    => contact page
+  */
   return (
     <main
       className="bg-light d-flex flex-row align-items-center"
@@ -13,4 +16,4 @@ const CareerPage = () => {
   );
 };
 
-export default CareerPage;
+export default ContactPage;

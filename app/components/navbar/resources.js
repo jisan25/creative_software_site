@@ -1,51 +1,53 @@
 import React from "react";
-import { Roboto } from "next/font/google";
 
+// roboto google font configuration
+import { Roboto } from "next/font/google";
 const roboto = Roboto({
   weight: ["300", "400", "500", "700", "900"],
   subsets: ["cyrillic"],
 });
 
-// const mulish = Mulish({
-//     weight: ["300", "400", "500", "600", "700", "800", "900"],
-//     subsets: ["latin"],
-//     display: "swap",
-//   });
-
 const Resources = () => {
   return (
     <section className="resource__sec">
       <div className="row">
+        {/* column */}
         <div className="col-lg-4 all-resources">
+          {/* col heading */}
           <h2 className="mb-3 h4 font-bold">LEARN MORE</h2>
+          {/* column content */}
           <h4 className={`${"mb-3"} ${roboto.className}`}>
-            <i class="bi bi-asterisk"></i> All Resources
+            <i className="bi bi-asterisk"></i> All Resources
           </h4>
           <h4 className={`${"mb-3"} ${roboto.className}`}>
-            <i class="bi bi-asterisk"></i> Documentation
+            <i className="bi bi-asterisk"></i> Documentation
           </h4>
           <h4 className={`${"mb-3"} ${roboto.className}`}>
-            <i class="bi bi-pen-fill"></i> Blog
+            <i className="bi bi-pen-fill"></i> Blog
           </h4>
           <h4 className={`${"mb-3"} ${roboto.className}`}>
-            <i class="bi bi-book-fill"></i> Case Studies
+            <i className="bi bi-book-fill"></i> Case Studies
           </h4>
         </div>
+        {/* column */}
         <div className="col-lg-4 all-resources">
+          {/* column heading */}
           <h2 className="mb-3 h4 font-bold">LEARN MORE</h2>
+          {/* column content */}
           <h4 className={`${"mb-3"} ${roboto.className}`}>
-            <i class="bi bi-bounding-box"></i> Events
+            <i className="bi bi-bounding-box"></i> Events
           </h4>
           <h4 className={`${"mb-3"} ${roboto.className}`}>
-            <i class="bi bi-hypnotize"></i> Webinars
+            <i className="bi bi-hypnotize"></i> Webinars
           </h4>
           <h4 className={`${"mb-3"} ${roboto.className}`}>
-            <i class="bi bi-patch-question-fill"></i> FAQS
+            <i className="bi bi-patch-question-fill"></i> FAQS
           </h4>
           <h4 className={`${"mb-3"} ${roboto.className}`}>
-            <i class="bi bi-award-fill"></i> AWARDS AND RECOGNITION
+            <i className="bi bi-award-fill"></i> AWARDS AND RECOGNITION
           </h4>
         </div>
+        {/* column */}
         <div className="col-lg-4 resource-col-middle d-flex align-items-center justify-content-center text-center">
           <div className="">
             <h4 className="mb-1 h6">

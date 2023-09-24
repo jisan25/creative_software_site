@@ -17,6 +17,7 @@ export default class SliderClient extends Component {
     return (
       <div>
         <Slider {...settings}>
+          {/* client */}
           <div className="">
             <img
               width="75%"
@@ -25,6 +26,7 @@ export default class SliderClient extends Component {
               alt=""
             />
           </div>
+          {/* client */}
           <div className="">
             <img
               width="75%"
@@ -33,6 +35,7 @@ export default class SliderClient extends Component {
               alt=""
             />
           </div>
+          {/* client */}
           <div className="">
             <img
               width="75%"
@@ -41,6 +44,7 @@ export default class SliderClient extends Component {
               alt=""
             />
           </div>
+          {/* client */}
           <div className="">
             <img
               width="75%"
@@ -49,6 +53,7 @@ export default class SliderClient extends Component {
               alt=""
             />
           </div>
+          {/* client */}
           <div className="">
             <img
               width="75%"
@@ -57,6 +62,7 @@ export default class SliderClient extends Component {
               alt=""
             />
           </div>
+          {/* client */}
           <div className="">
             <img
               width="75%"
@@ -65,6 +71,7 @@ export default class SliderClient extends Component {
               alt=""
             />
           </div>
+          {/* client */}
           <div className="">
             <img
               width="75%"
@@ -73,6 +80,7 @@ export default class SliderClient extends Component {
               alt=""
             />
           </div>
+          {/* client */}
           <div className="">
             <img
               width="75%"

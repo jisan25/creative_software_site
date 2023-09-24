@@ -1,11 +1,11 @@
 import Link from "next/link";
+// all products data from local db corporate
 import { ProductsData } from "../../db/Corporate";
 
 const ProductForm = ({ productData }) => {
-  // const {slug} = productData;
-
   return (
     <>
+      {/* form heading */}
       <h1 style={{ marginBottom: "5px" }}>Book A Demo</h1>
       <p className="text-medium-emphasis" style={{ marginTop: "0px" }}>
         Please complete the form below to schedule your demo.
@@ -45,7 +45,7 @@ const ProductForm = ({ productData }) => {
       {/* designation & type of company */}
       <div className="input-group mb-3">
         <span className="input-group-text">
-          <i class="bi bi-ubuntu"></i>
+          <i className="bi bi-ubuntu"></i>
         </span>
         <input
           className="form-control"
@@ -54,7 +54,7 @@ const ProductForm = ({ productData }) => {
         />
 
         <span className="input-group-text">
-          <i class="bi bi-building-fill-gear"></i>
+          <i className="bi bi-building-fill-gear"></i>
         </span>
         <input
           className="form-control"
@@ -136,7 +136,7 @@ const ProductForm = ({ productData }) => {
       {/* solution  */}
       <div className="input-group mb-3">
         <span className="input-group-text">
-          <i class="bi bi-bullseye"></i>
+          <i className="bi bi-bullseye"></i>
         </span>
         <input
           className="form-control"
@@ -192,7 +192,7 @@ const ProductForm = ({ productData }) => {
           </Link>
         </p>
       </div>
-
+      {/* cta - book a demo now */}
       <div style={{ display: "grid", placeItems: "end" }}>
         <button
           className="btn btn-block btn-success schedule_btn"

@@ -4,17 +4,18 @@ const Article = () => {
   return (
     // article
     <article className="entry">
+      {/* article image */}
       <div className="entry-img">
         <img src="/img/blog/blog-1.jpg" alt="" className="img-fluid" />
       </div>
-
+      {/* title */}
       <h2 className="entry-title">
         <Link href="/blog/1">
           Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam
           quia
         </Link>
       </h2>
-
+      {/* meta */}
       <div className="entry-meta">
         <ul>
           <li className="d-flex align-items-center">
@@ -33,7 +34,7 @@ const Article = () => {
           </li>
         </ul>
       </div>
-
+      {/* content */}
       <div className="entry-content">
         <p>
           Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam

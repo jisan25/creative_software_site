@@ -1,12 +1,15 @@
-// import { Metadata } from "next";
-
+// get all products data from local db
 import { ProductsData } from "@/app/db/Corporate";
 
-import { Nunito } from "next/font/google";
 import Link from "next/link";
+
+// google font congig
+
+import { Nunito } from "next/font/google";
 const nunito = Nunito({ subsets: ["cyrillic"] });
 
 export default function PortFolioPage() {
+  // shorten the paragraph
   const truncateParagraph = (paragraph, maxLength) => {
     if (paragraph.length <= maxLength) {
       return paragraph;
@@ -18,6 +21,7 @@ export default function PortFolioPage() {
     // All products section
     <section id="services" className="services">
       <div className="container-fluid container-xl">
+        {/* section header */}
         <header className="section-header">
           <h2>All Products</h2>
           <p>Veritatis et dolores facere numquam et praesentium</p>
@@ -31,6 +35,7 @@ export default function PortFolioPage() {
                 <i className={`${item.icon} ${"icon"}`}></i>
                 <h3 className={nunito.className}>{item.title}</h3>
                 <p>{truncateParagraph(item.description, 300)}</p>
+                {/* cta - read more */}
                 <Link href={"/product/" + item.slug} className="read-more">
                   <span>Read More</span> <i className="bi bi-arrow-right"></i>
                 </Link>
@@ -44,5 +49,3 @@ export default function PortFolioPage() {
     </section>
   );
 }
-
-// export default PortFolioPage;

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import NewsLetter from "./home/NewsLetter";
+// site information from local db siteinfo
+import siteInfo from "../db/siteInfo";
 
 const Footer = () => {
   return (
@@ -8,22 +9,14 @@ const Footer = () => {
       {/* footer part */}
       <div className="footer-top">
         <div className="container-xl container-fluid">
-          <div className="row gy-4">
+          <div className="row gy-4 justify-content-between">
             {/* footer col 1 -> logo, description & social  */}
-            <div className="col-lg-5 col-md-12 footer-info">
+            <div className="col-lg-6 col-md-12 footer-info">
               <a href="index.html" className="logo d-flex align-items-center">
                 <img src="/img/logo.png" alt="" />
                 <span>{process.env.SITE_NAME}</span>
               </a>
-              <p>
-                Creative software is a software Company that specializes in the
-                development, distribution and maintenance of software
-                applications, programs and services. These companies create
-                software products to address a wide range of needs and
-                industries, from consumer-oriented applications like Develops
-                small, medium and large to complex enterprise software for
-                businesses and organizations.
-              </p>
+              <p>{siteInfo.site_description}</p>
             </div>
             {/* footer col 2 */}
             <div className="col-lg-2 col-6 footer-links">
@@ -77,7 +70,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* footer col 4 */}
-            <div className="col-lg-3 col-md-12 footer-links">
+            <div className="col-lg-2 footer-links">
               <h4>Support</h4>
               <ul>
                 <li>
@@ -109,6 +102,7 @@ const Footer = () => {
       <div className="container-fluid container-xl">
         <div className="copyright">
           <div className="d-flex justify-content-between align-items-center">
+            {/* credit - col */}
             <div>
               &copy; 2015-{new Date().getFullYear()}{" "}
               <strong>
@@ -123,6 +117,7 @@ const Footer = () => {
               </strong>
               All Rights Reserved.
             </div>
+            {/* credit - col */}
             <div className="social-links d-flex align-items-center justify-content-start gap-3">
               <div style={{ marginTop: "-5px" }}>Follow Us on</div>
               <div className="d-flex gap-3">
@@ -143,6 +138,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+            {/* credit - col */}
             <div className="footer_page">
               <Link
                 href="#"

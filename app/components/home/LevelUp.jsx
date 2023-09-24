@@ -1,15 +1,16 @@
 import Link from "next/link";
-import React from "react";
 
 const LevelUp = () => {
   return (
     <section>
       <div className="container-fluid container-xl">
         <div className="d-flex justify-content-center align-items-center flex-column">
+          {/* level up heading */}
           <h2 className="h2 text-center font-bold mb-4">
             Level Up your <span style={{ color: "#4154F1" }}>Business</span>{" "}
             With the Finest Solutions
           </h2>
+          {/* shedule demo & company profile */}
           <div className="demo-company-wrapper d-flex justify-content-between">
             <Link
               href="/schedule-demo"
@@ -23,7 +24,7 @@ const LevelUp = () => {
                 borderBottomLeftRadius: "20px",
               }}
             >
-              <i class="bi bi-headset"></i> SCHEDULE A DEMO
+              <i className="bi bi-headset"></i> SCHEDULE A DEMO
             </Link>
             <a
               href="#"
@@ -37,7 +38,7 @@ const LevelUp = () => {
                 borderBottomRightRadius: "20px",
               }}
             >
-              <i class="bi bi-file-earmark-fill"></i> COMPANY PROFILE
+              <i className="bi bi-file-earmark-fill"></i> COMPANY PROFILE
             </a>
             <span className="level-up-or-circle">Or</span>
           </div>

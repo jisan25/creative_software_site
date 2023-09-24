@@ -170,6 +170,19 @@ export const ProductsData = [
     title: "Restaurant Management Software",
     description:
       "Restaurant management software is a comprehensive digital solution tailored for the foodservice industry. It facilitates efficient restaurant operations by automating tasks such as order management, reservations, table assignments, menu updates, staff scheduling, and inventory tracking. Additionally, it often includes features for payment processing, customer relationship management (CRM), and analytics to enhance decision-making and customer service. Restaurant management software empowers establishments to improve efficiency, reduce costs, and provide a better dining experience for their patrons.",
+    features: [
+      "Cloud-based",
+      "Employee Management",
+      "Table reservation system",
+      "Kitchen Management",
+      "Order management",
+      "Inventory management system ",
+      "Payment data",
+      "Customer data",
+      "Tracking restaurant finances",
+      "Analytics and reporting",
+      "Sales and menu analytics",
+    ],
   },
   {
     id: 3,
@@ -178,6 +191,19 @@ export const ProductsData = [
     title: "Freight forwarding Software",
     description:
       "Freight forwarding software is a digital tool tailored for logistics companies and freight forwarders to efficiently manage and optimize the shipment of goods. It streamlines tasks such as cargo tracking, documentation, scheduling, cost calculation, and communication with carriers and clients. This software enhances supply chain visibility, automates processes, and improves overall efficiency in the freight forwarding industry.",
+    features: [
+      "Sea Import Management",
+      "Sea Export Management",
+      "Air Import Management",
+      "Air Export Management",
+      "Invoice Management",
+      "Credit/ Debit Note Management",
+      "Bill of Lading/EPB/Master",
+      "Shipment Advice",
+      "Manifest",
+      "Agent /Consignee /Shipper /Notify",
+      "Booking /Quantity /Container",
+    ],
   },
   {
     id: 4,
@@ -186,6 +212,16 @@ export const ProductsData = [
     title: "Hospital Management Software",
     description:
       "Hospital Management Software is a comprehensive digital solution designed for healthcare institutions to streamline and optimize their administrative and clinical processes. It helps manage patient information, appointments, billing, inventory, and electronic health records (EHR). Additionally, it often includes features for staff scheduling, reporting, and analytics, enhancing operational efficiency, patient care, and overall management of healthcare facilities. This software facilitates better coordination among various departments and improves the overall quality of healthcare services provided by hospitals.",
+    features: [
+      "Doctor",
+      "Patient",
+      "Reception",
+      "Appointment",
+      "Pathology",
+      "Radiology",
+      "Pharmacy",
+      "Accounts",
+    ],
   },
 
   {
@@ -195,6 +231,18 @@ export const ProductsData = [
     title: "Pharmacy Management Software",
     description:
       "Pharmacy Management Software is a digital solution designed for pharmacies and drugstores to efficiently manage various aspects of their operations. It helps in inventory management, prescription processing, patient records, billing, and compliance with regulations. Additionally, it often includes features for drug interaction checks, medication history, and insurance claim processing, enhancing patient safety and customer service. This software streamlines pharmacy workflows, reduces errors, and improves the overall management of pharmaceutical processes, ultimately leading to better patient care and operational efficiency.",
+    features: [
+      "Employee Management",
+      "Customer Management",
+      "Suppliers Management",
+      "Medicine Management",
+      "Barcode Management",
+      "Buying/Purchasing",
+      "Inventory Management.",
+      "Invoicing/Sales",
+      "Repairing",
+      "Expiry and Batch No Management",
+    ],
   },
   {
     id: 6,
@@ -203,6 +251,15 @@ export const ProductsData = [
     title: "Parking Management Software",
     description:
       "Parking Management Software is a specialized digital tool used by parking facilities, such as garages and lots, to efficiently manage and control their parking operations. It helps in automating tasks like vehicle entry and exit, payment processing, space allocation, and reporting. Additionally, it often includes features like license plate recognition, reservation systems, and real-time occupancy tracking, enhancing the overall efficiency and user experience in parking facilities. This software allows parking operators to optimize space utilization, improve security, and provide a smoother parking experience for customers.",
+    features: [
+      "Parking Place",
+      "Parking Category",
+      "TimeZone Setting",
+      "Parking Setup",
+      "vehicle Manage",
+      "Parking In / out",
+      "Reports",
+    ],
   },
   {
     id: 7,
@@ -211,6 +268,24 @@ export const ProductsData = [
     title: "Courier Management Software",
     description:
       "Courier Management Software is a digital solution designed to streamline and optimize the operations of courier and delivery services. It helps manage orders, track shipments, optimize routes, handle scheduling, and automate billing and reporting. Additionally, it often includes features for real-time tracking, proof of delivery, and customer communication, improving efficiency and transparency in the courier industry. This software enables courier companies to enhance their service quality, reduce costs, and provide a better experience for their clients.",
+    features: [
+      "Merchant Management",
+      "Rider Management",
+      "Hub/Branch/Agent",
+      "Call Center Management",
+      "Accounts Management",
+      "Manager Management",
+      "Merchant Wise Price",
+      "Order Manage",
+      "Reschedule & Hold",
+      "Pick Up Auto Assign",
+      "Agent Wise Collection",
+      "Hold/Reschedule/Partial Delivery",
+      "Bulk Import",
+      "Problem Management",
+      "Complain",
+      "SMS Integration",
+    ],
   },
   {
     id: 8,
@@ -219,6 +294,17 @@ export const ProductsData = [
     title: "Prescription Management System",
     description:
       "A Prescription Management System is specialized software designed for healthcare providers and pharmacies to efficiently manage and process medication prescriptions. It helps healthcare professionals electronically generate, store, and transmit prescriptions, ensuring accuracy and compliance with regulations. Additionally, it often includes features for patient records, drug interactions, and medication history, improving patient safety and care. This system streamlines the prescription workflow, reduces errors, and enhances the overall management of medication-related processes in healthcare settings.",
+    features: [
+      "Dose, Rules & Duration Management",
+      "Patient List",
+      "Referral List",
+      "Electronic Medical Records",
+      "Prescription Template",
+      "Customized Prescription",
+      "Printing",
+      "Automated Operating System",
+      "Easy to Use",
+    ],
   },
 
   {
@@ -228,6 +314,17 @@ export const ProductsData = [
     title: "Micro Credit Management Software",
     description:
       "Micro Credit Management Software is a digital solution designed for microfinance institutions and organizations that provide small-scale loans to individuals and small businesses. It helps in automating and managing the entire microcredit lifecycle, including loan origination, disbursement, repayment tracking, and reporting. Additionally, it often includes features for client data management, risk assessment, and portfolio analysis, improving the efficiency and accuracy of microcredit operations. This software enables microfinance institutions to serve their clients more effectively, reduce administrative overhead, and make informed lending decisions.",
+    features: [
+      "Employee Management",
+      "Customer List",
+      "Loan Management",
+      "DPS Management",
+      "FDR Management",
+      "Package Management",
+      "Daily/ Weekly/ Monthly Collection",
+      "Reporting",
+      "Easy to Use",
+    ],
   },
   {
     id: 10,
@@ -236,6 +333,14 @@ export const ProductsData = [
     title: "Diagnostic Management System",
     description:
       "A Diagnostic Management System is a specialized software tool used in healthcare to streamline and enhance the diagnostic testing process. It helps manage patient information, track test orders, process results, and facilitate communication between healthcare providers and diagnostic laboratories. Additionally, it often includes features for quality control, data analysis, and reporting, improving the accuracy and efficiency of diagnostic procedures. This system plays a crucial role in healthcare settings, ensuring that patients receive timely and accurate diagnostic information for effective medical decision-making.",
+    features: [
+      "Doctor",
+      "Patient",
+      "Reception",
+      "Appointment",
+      "Pathology",
+      "Accounts",
+    ],
   },
   {
     id: 11,
@@ -244,6 +349,7 @@ export const ProductsData = [
     title: "Enterprise Resource Planning (ERP)",
     description:
       "Enterprise Resource Planning (ERP) is an integrated software solution used by businesses to manage and streamline various core processes and functions, including finance, human resources, inventory management, supply chain, manufacturing, and more. ERP software provides a centralized database and a suite of applications that enable data sharing and real-time communication across different departments. Its primary goal is to improve operational efficiency, facilitate data-driven decision-making, and enhance overall business performance by providing a comprehensive view of an organization's processes and resources.",
+    features: [],
   },
   {
     id: 12,
@@ -252,6 +358,31 @@ export const ProductsData = [
     title: "Customer Relationship Management",
     description:
       "Customer Relationship Management (CRM) refers to a strategy and software system that helps businesses effectively manage and nurture their interactions and relationships with customers. CRM software provides tools for storing and analyzing customer data, tracking communication history, managing sales and marketing efforts, and improving customer service. The goal of CRM is to enhance customer satisfaction, increase sales, and drive long-term customer loyalty by providing a better understanding of customer needs and preferences.",
+    features: [
+      "Employee management",
+      "Product management",
+      "Coutomer Management",
+      "Leads Management",
+      "Followup Management",
+      "Proposal Management",
+      "Project Management",
+      "Tasks Management",
+      "Invoices Management",
+      "Subscription",
+      "Collection",
+      "Tickets Management",
+      "Holiday Calandar",
+      "Reminder",
+      "Expanses",
+      "Knowledge Base",
+      "Jobs",
+      "Interview Schedule",
+      "Offer Letters",
+      "Candidate Database",
+      "Attendances",
+      "Leave",
+      "Salary Generate",
+    ],
   },
 ];
 

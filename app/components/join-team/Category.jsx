@@ -1,16 +1,22 @@
 const Category = () => {
+  // switch tab functionality
   const handleChange = (e, tabContent) => {
+    // get all nav buttons & remove active class
     const navLinks = document.querySelectorAll(".nav-link");
     navLinks.forEach((element) => {
       element.classList.remove("active");
     });
+    // set active class to selected tab
     e.currentTarget.classList.add("active");
 
+    // get all tab contents
     const allTabs = document.querySelectorAll(".tab-pane");
+    // remove show & active class from all tabs
     allTabs.forEach((element) => {
       element.classList.remove("show");
       element.classList.remove("active");
     });
+    // add show & active class to selected tabs
     document.getElementById(tabContent).classList.add("show");
     document.getElementById(tabContent).classList.add("active");
   };
