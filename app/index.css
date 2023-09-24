@@ -15,6 +15,93 @@
 
 /* custom css */
 
+/* it outsourcing page css */
+
+.it-hero {
+  height: 70vh;
+  background: #0a1846;
+}
+.it-hero .headline h4 {
+  font-size: 2.4rem;
+  color: white;
+}
+.it-hero .headline h2 {
+  font-size: 3.7rem;
+  color: white;
+  width: 718px;
+}
+.top-bottom-border {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 30px;
+}
+.top-bottom-border span {
+  color: #99ddc8;
+}
+.icons-with-infos span {
+  color: #99ddc8;
+  font-size: 19px;
+}
+.icons-with-infos i {
+  color: #fff;
+}
+/* it page about section */
+.it-about h2 {
+  font-size: 3.1rem;
+  color: #0a1846;
+}
+.it-about p {
+  max-width: 1200px;
+  padding: 0px 50px;
+  color: #5c718e;
+  font-size: 1.3rem;
+}
+.dash-design {
+  width: 50px;
+  height: 2px;
+  background: #4154f1;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+/* it stuffing service section */
+.it-stuffing-service h2 {
+  font-size: 3.1rem;
+  color: #0a1846;
+}
+.it-stuffing-service p {
+  max-width: 1200px;
+  padding: 0px 50px;
+  color: #5c718e;
+  font-size: 1.3rem;
+}
+.it-icon-text-wrapper {
+  padding: 100px 0px;
+}
+.it-icon-text {
+  margin-bottom: 50px;
+}
+.it-icon-text div {
+  background: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+}
+.it-icon-text i {
+  font-size: 1.2rem;
+}
+.it-icon-text h4 {
+}
+
 /* sitemap */
 
 .sitemap-pages {

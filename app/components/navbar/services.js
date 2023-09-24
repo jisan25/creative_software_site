@@ -37,7 +37,7 @@ const Services = () => {
                     {item.slug === "it-outsourcing" && (
                       <Link
                         className="mt-2 font-bold"
-                        href={"/services/" + item.slug}
+                        href={"/it-outsourcing"}
                         style={{
                           display: "inline",
                           color: "#4154F1",
