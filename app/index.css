@@ -15,6 +15,21 @@
 
 /* custom css */
 
+/* hiring page */
+
+.hire-form-btn {
+  margin-top: 20px;
+}
+.hire-form-btn:hover {
+  background: #187f5e !important;
+}
+
+/* hiring page - get free */
+
+.get-free li {
+  font-size: 21px;
+}
+
 /* it outsourcing page css */
 
 .it-hero {
@@ -28,7 +43,7 @@
 .it-hero .headline h2 {
   font-size: 3.7rem;
   color: white;
-  width: 718px;
+  width: 1000px;
 }
 .top-bottom-border {
   border-top: 1px solid #fff;
@@ -70,6 +85,7 @@
 }
 
 /* it stuffing service section */
+
 .it-stuffing-service h2 {
   font-size: 3.1rem;
   color: #0a1846;
@@ -81,25 +97,115 @@
   font-size: 1.3rem;
 }
 .it-icon-text-wrapper {
-  padding: 100px 0px;
+  padding: 100px 0px 0px;
 }
+.it-icon-text-wrapper .col-lg-3 {
+  width: 24.3%;
+}
+/* .it-icon-text-wrapper .card {
+  display: block;
+} */
+
 .it-icon-text {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .it-icon-text div {
-  background: red;
-  width: 50px;
-  height: 50px;
+  background: #4154f1;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin: 0 auto;
   display: grid;
   place-items: center;
   margin-bottom: 20px;
+  padding-top: 2px;
 }
 .it-icon-text i {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  color: #fff;
 }
 .it-icon-text h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #0a1846;
+}
+
+/* it advantages section */
+.it-advantages {
+  overflow: visible;
+}
+.it-advantages h4 {
+  font-size: 2.4rem;
+  color: #0a1846;
+}
+.advantages {
+  z-index: 999;
+}
+
+.advantages .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 50px;
+  transition: all 0.4s;
+}
+.advantages .card:hover {
+  transform: scale(1.1);
+}
+.advantages .icon {
+  padding-top: 40px;
+}
+.advantages .icon i {
+  color: #32a581;
+  font-size: 3.5rem;
+}
+.advantages .card h5 {
+  font-size: 1.6rem;
+}
+.advantages .card p {
+  font-size: 1rem;
+  padding: 0px 20px;
+}
+
+/* it hiring */
+
+.hiring .icon {
+  border: 1px solid #32a581;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.hiring .icon i {
+  font-size: 1.9rem;
+}
+.hiring .card {
+  padding: 90px 0px 30px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hiring .card span {
+  background: #32a581;
+  display: inline-block;
+  width: 130px;
+  color: white;
+  padding: 8px 0px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: absolute;
+  top: 10%;
+  left: -7%;
+}
+.hiring .card h5 {
+  font-size: 1.4rem;
+}
+.hiring .col-lg-3 {
+  width: 23%;
+}
+
+.it-share-btn:hover {
+  background: #1f7b5e !important;
 }
 
 /* sitemap */

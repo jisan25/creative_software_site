@@ -1,3 +1,4 @@
+// extenal packages
 import Link from "next/link";
 //all service data from local db
 import ServicesData from "../../db/Corporate";
@@ -38,6 +39,20 @@ const Services = () => {
                       <Link
                         className="mt-2 font-bold"
                         href={"/it-outsourcing"}
+                        style={{
+                          display: "inline",
+                          color: "#4154F1",
+                          padding: "0px",
+                        }}
+                      >
+                        Learn More <i className="bi bi-arrow-right"></i>
+                      </Link>
+                    )}
+                    {/* if service is not outsourcing */}
+                    {item.slug !== "it-outsourcing" && (
+                      <Link
+                        className="mt-2 font-bold"
+                        href={"/services/" + item.slug}
                         style={{
                           display: "inline",
                           color: "#4154F1",

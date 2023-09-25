@@ -1,10 +1,21 @@
 "use client";
+
+// extenral package
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+// components
+import ItHero from "@/app/components/it-outsourcing/ItHero";
+
 // all services data from local db corporate
 import ServicesData from "@/app/db/Corporate";
-import { useEffect, useState } from "react";
 
 // google font config
 import { Nunito } from "next/font/google";
+import About from "@/app/components/it-outsourcing/About";
+import Advantages from "@/app/components/it-outsourcing/Advantages";
+import Hiring from "@/app/components/it-outsourcing/Hiring";
+import GrowBusiness from "@/app/components/it-outsourcing/GrowBusiness";
 const nunito = Nunito({ subsets: ["cyrillic"] });
 
 const ServiceDetailsPage = ({ params }) => {
@@ -20,7 +31,7 @@ const ServiceDetailsPage = ({ params }) => {
   // return service matched to route params
   const getService = () => {
     ServicesData.find((item) => {
-      if (item.slug === params.id) {
+      if (item.slug === params.slug) {
         setService(item);
       }
     });
@@ -36,7 +47,8 @@ const ServiceDetailsPage = ({ params }) => {
     }
   };
   return (
-    <main id="main">
+    <main id="main" className="container-xl container-fluid">
+      <ItHero />
       <section id="services" className="services">
         {/* show a loader */}
         {loading && <h4 className="h4 text-center">Loading ....</h4>}
@@ -44,31 +56,35 @@ const ServiceDetailsPage = ({ params }) => {
           <div className="container-fluid container-xl">
             {/* section header */}
             <header className="section-header">
-              <h2>Service</h2>
-              <p>Veritatis et dolores facere numquam et praesentium</p>
+              <p>{service.title} - category</p>
             </header>
 
             <div className="row gy-4">
               {/* service */}
-              {service.id && (
-                <div className="col-lg-4 col-md-6" key={service.id}>
-                  <div className={`${"service-box"} ${service.color}`}>
-                    <i className={`${service.icon} ${"icon"}`}></i>
-                    <h3 className={nunito.className}>{service.title}</h3>
-                    <p>{truncateParagraph(service.description, 300)}</p>
-                    <a href="#" className="read-more">
-                      <span>Read More</span>{" "}
-                      <i className="bi bi-arrow-right"></i>
-                    </a>
+              {service.id &&
+                service.category.map((cat) => (
+                  <div className="col-lg-4 col-md-6" key={cat.id}>
+                    <div className={`${"service-box green"}`}>
+                      <i className="icon bi bi-command"></i>
+                      <h3 className={nunito.className}>{cat}</h3>
+
+                      <Link href="/hiring" className="read-more">
+                        <span>Get Started</span>{" "}
+                        <i className="bi bi-arrow-right"></i>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              )}
+                ))}
 
               {/* end service */}
             </div>
           </div>
         )}
       </section>
+      <About />
+      <Advantages />
+      <Hiring />
+      <GrowBusiness />
     </main>
   );
 };

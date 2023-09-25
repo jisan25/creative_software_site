@@ -5,6 +5,11 @@ const ServicesData = [
     title: "Software Development",
     slug: "software-development",
     color: "blue",
+    category: [
+      "Hire PHP Developers",
+      "Hire React Developers",
+      "Hire Software Developers",
+    ],
     description:
       "Software development is the art and science of designing, coding, testing, and maintaining computer programs and applications. It involves translating ideas into functional software solutions that cater to specific needs and requirements. This dynamic field fuels technological innovation, underpinning everything from mobile apps to complex business systems, driving progress in our digital world.",
   },
@@ -14,6 +19,7 @@ const ServicesData = [
     title: "Website Development",
     slug: "website-development",
     color: "red",
+    category: ["Hire Frontend Developers", "Hire Backend Developers"],
     description:
       "Website development involves the design, coding, and maintenance of websites to ensure they function seamlessly on the internet. It encompasses a wide range of tasks, from creating the website's structure and layout to implementing interactive features and ensuring compatibility across different devices and browsers. Effective website development is crucial for establishing a strong online presence, engaging visitors, and achieving specific goals, whether they are related to business, information dissemination, or online communities. It combines creativity with technical expertise to deliver user-friendly and visually appealing websites that meet the needs of both site owners and their audiences.",
   },
@@ -23,6 +29,7 @@ const ServicesData = [
     title: "Apps Development",
     slug: "apps-development",
     color: "pink",
+    category: ["Hire Flutter App Developer", "Hire Android App Developer"],
     description:
       "App development involves the process of designing, coding, and launching software applications for various platforms, such as mobile devices, desktops, and the web. App developers use programming languages and tools to create functional and user-friendly applications that serve specific purposes, from productivity and entertainment to solving practical problems. The rapid evolution of technology has made app development a pivotal force in the digital landscape, enabling businesses and individuals to connect with users, streamline processes, and enhance daily life through intuitive and innovative software solutions.",
   },
@@ -33,6 +40,12 @@ const ServicesData = [
     title: "Digital Marketing",
     slug: "digital-marketing",
     color: "orange",
+    category: [
+      "Hire SEO Expert",
+      "Hire Content Writer",
+      "Hire Email Marketing Expert",
+      "Hire Google Analytics Expert",
+    ],
     description:
       "Digital marketing is a strategic approach to promoting products, services, or brands using digital channels and technologies. It encompasses activities such as search engine optimization (SEO), social media marketing, email marketing, content creation, and online advertising. Digital marketing leverages the power of the internet to reach and engage target audiences, track performance metrics, and optimize campaigns for maximum impact. In today's digital age, it is a vital component of any successful marketing strategy, allowing businesses to connect with customers, drive conversions, and stay competitive in the digital landscape.",
   },
@@ -43,6 +56,11 @@ const ServicesData = [
     title: "UI / UX Design",
     slug: "ui-ux-design",
     color: "purple",
+    category: [
+      "Hire Graphic Designer",
+      "Hire Web Designer",
+      "Hire UI/UX Designer",
+    ],
     description:
       "UI (User Interface) and UX (User Experience) design are disciplines focused on creating optimal digital interactions. UI design primarily deals with the visual and interactive aspects of a digital product, ensuring it is visually appealing and easy to navigate. UX design, on the other hand, focuses on the overall user journey, aiming to make it seamless, intuitive, and enjoyable. Together, they aim to create user-centric and visually pleasing digital experiences that meet both functional and aesthetic requirements.",
   },
@@ -52,6 +70,48 @@ const ServicesData = [
     title: "IT Outsourcing",
     slug: "it-outsourcing",
     color: "green",
+    category: [
+      {
+        id: 1,
+        icon: "bi bi-slack",
+        name: "Software Development",
+      },
+      {
+        id: 2,
+        icon: "bi bi-globe",
+        name: "Web Development",
+      },
+      {
+        id: 3,
+        icon: "bi bi-android2",
+        name: "Mobile App Development",
+      },
+      {
+        id: 4,
+        icon: "bi bi-broadcast",
+        name: "IT Outsourcing",
+      },
+      {
+        id: 5,
+        icon: "bi bi-brush-fill",
+        name: "Graphics & Web Designing",
+      },
+      {
+        id: 6,
+        icon: "bi bi-gear-fill",
+        name: "IT Technical Support",
+      },
+      {
+        id: 7,
+        icon: "bi bi-headset",
+        name: "Virtual Assistant",
+      },
+      {
+        id: 8,
+        icon: "bi bi-pen-fill",
+        name: "Content Writing",
+      },
+    ],
     description:
       "IT outsourcing refers to the practice of delegating certain technology-related tasks, services, or projects to external service providers. This strategic business decision allows organizations to leverage the expertise, resources, and cost-efficiency of external specialists, often located in different geographic regions. IT outsourcing can encompass a wide range of services, such as software development, technical support, infrastructure management, and more. By outsourcing IT functions, companies can focus on their core operations while benefiting from specialized skills and cost savings.",
   },
